@@ -1,9 +1,9 @@
 
-public class TextBook extends Book
+public class Textbook extends Book
 {
 	private int edition;
 	
-	public TextBook(String bookTitle, double bookPrice, int bookEdition)	
+	public Textbook(String bookTitle, double bookPrice, int bookEdition)	
 	{
 		super(bookTitle, bookPrice);
 		edition = bookEdition;
@@ -11,7 +11,7 @@ public class TextBook extends Book
 	
 	public int getEdition() { return edition; }
 	
-	public boolean canSubstituteFor(TextBook that)
+	public boolean canSubstituteFor(Textbook that)
 	{
 		if(this.getTitle().equals(that.getTitle()))
 			if(this.getEdition() >= that.getEdition())

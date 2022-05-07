@@ -16,6 +16,14 @@ public class Driver
 		
 		System.out.format("Can bio2019 substitute for bio2015? - %b%n", 
 				bio2019.canSubstituteFor(bio2015));
+		
+		System.out.format("Can bio2015 substitute for bio2019? - %b%n", 
+				bio2015.canSubstituteFor(bio2019));
+		
+		Textbook math = new Textbook("Calculus", 45.25, 1);
+		
+		System.out.format("Can bio2015 substitute for math? - %b%n", 
+				bio2015.canSubstituteFor(math));
 	}
 
 }

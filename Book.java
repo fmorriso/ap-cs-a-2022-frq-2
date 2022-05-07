@@ -14,11 +14,15 @@ public class Book
 		price = bookPrice;
 	}
 	
+	@SuppressWarnings("unused")
 	private Book() {/* prevent uninitialized construction of instances */}	
 	
+	// getters
 	public String getTitle() { return title; }
 	public double getPrice() { return price; }
 	
+	// A method that could just have easily been toString() 
+	// but way makes it more challenging for the student.
 	public String getBookInfo()
 	{
 		return title + "-" + price;

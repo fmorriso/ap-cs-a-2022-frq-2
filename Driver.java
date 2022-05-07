@@ -8,20 +8,10 @@ public class Driver
 
 	public static void main(String[] args)
 	{
-		PartA();
-		PartB();
-	}
-
-	private static void PartA()
-	{
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void PartB()
-	{
-		// TODO Auto-generated method stub
-		
+		TextBook bio2015 = new TextBook("Biology", 49.75, 2);
+		TextBook bio2019 = new TextBook("Biology", 39.75, 3);
+		System.out.format("Edition: %d%n", bio2019.getEdition());
+		System.out.println(bio2019.getBookInfo());
 	}
 
 }

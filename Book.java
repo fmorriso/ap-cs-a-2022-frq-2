@@ -22,7 +22,7 @@ public class Book
 	public double getPrice() { return price; }
 	
 	// A method that could just have easily been toString() 
-	// but way makes it more challenging for the student.
+	// but this way makes it more challenging for the student.
 	public String getBookInfo()
 	{
 		return title + "-" + price;

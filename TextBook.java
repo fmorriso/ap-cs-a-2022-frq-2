@@ -29,12 +29,8 @@ public class Textbook extends Book
 	 */
 	public boolean canSubstituteFor(Textbook that)
 	{
-		if(this.getTitle().equals(that.getTitle()))
-			if(this.getEdition() >= that.getEdition())
-				return true;
-		
-		return false;
-		
+		return this.getTitle().equals(that.getTitle())
+		    && this.getEdition() >= that.getEdition();		
 	}
 	
 	/**

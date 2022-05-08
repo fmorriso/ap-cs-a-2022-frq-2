@@ -24,7 +24,7 @@ public class Textbook extends Book
 	 * <ul>
 	 * <li>The <code>title</code> of both textbooks must be identical
 	 * <li>The <code>edition number</code> of the current textbook must be greater than
-	 * or equal to the <code>edition number</code> of the proposed substitue.
+	 * or equal to the <code>edition number</code> of the textbook we want to become a substitue for.
 	 * </ul>
 	 */
 	public boolean canSubstituteFor(Textbook that)

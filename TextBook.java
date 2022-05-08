@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Fred Morrison
+ *
+ */
 public class Textbook extends Book
 {
 	private int edition;

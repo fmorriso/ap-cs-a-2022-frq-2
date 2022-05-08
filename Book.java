@@ -19,7 +19,7 @@ public class Book
 	
 	// getters
 	public String getTitle() { return title; }
-	public double getPrice() { return price; }
+	//public double getPrice() { return price; }
 	
 	// A method that could just have easily been toString() 
 	// but this way makes it more challenging for the student.

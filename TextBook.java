@@ -1,20 +1,20 @@
 /**
- * 
+ *
  * @author Fred Morrison
  *
  */
 public class Textbook extends Book
 {
 	private int edition;
-	
-	public Textbook(String bookTitle, double bookPrice, int bookEdition)	
+
+	public Textbook(String bookTitle, double bookPrice, int bookEdition)
 	{
 		super(bookTitle, bookPrice);
 		edition = bookEdition;
 	}
-	
+
 	public int getEdition() { return edition; }
-	
+
 	/**
 	 * <b>Purpose:</b> Determines if the current textbook can be substituted for another textbook.
 	 * @param that - the other textbook we are trying to become a substitute for.
@@ -30,11 +30,11 @@ public class Textbook extends Book
 	public boolean canSubstituteFor(Textbook that)
 	{
 		return this.getTitle().equals(that.getTitle())
-		    && this.getEdition() >= that.getEdition();		
+		    && this.getEdition() >= that.getEdition();
 	}
-	
+
 	/**
-	 * Returns a string representation of the current instance
+	 * <b>Purpose:</b> Returns a string representation of the current instance.
 	 */
 	public String getBookInfo()
 	{
